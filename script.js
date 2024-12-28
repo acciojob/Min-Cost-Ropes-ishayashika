@@ -7,7 +7,7 @@ while(arr.length>1){
 	arr.sort((a,b)=>a-b);
 	sum=arr[0]+arr[1];
 	total_cost+=sum;
-	arr=[sum,...slice(2)];
+	arr=[sum,...arr.slice(2)];
 }
 	 return total_cost; 
 }
